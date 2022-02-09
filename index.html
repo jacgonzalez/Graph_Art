@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <title>Graph Art</title>
+</head>
+<body>
+<div class="container py-5">
+
+    <!-- For demo purpose -->
+    <header class="text-white text-center">
+        <h1 class="display-4">Graph Art</h1>
+        <p class="lead mb-0">This is a project where we turn Data Structures into beautiful Art.</p>
+        <p class="mb-5 font-weight-light">Source code on
+            <a href="https://github.com/jacgonzalez/Graph_Art.git" class="text-white" target="_blank">
+                <u>Github</u>
+            </a>
+        </p>
+        <img src="https://bootstrapious.com/i/snippets/sn-img-upload/image.svg" alt="" width="150" class="mb-4">
+    </header>
+
+
+    <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+
+            <div class="form-group">
+                <input type="text" class="form-control font-weight-light text-muted" id="pointsNumberInput" aria-describedby="pointsNumberInputHelp"
+                       placeholder="Number of points">
+                <small id="pointsNumberInputHelp" class="form-text text-muted">Please enter the number of points. Example: 5000</small>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control font-weight-light text-muted" id="interationsNumberInput" aria-describedby="interationsNumberInputHelp"
+                       placeholder="Number of iterations">
+                <small id="interationsNumberInputHelp" class="form-text text-muted">Please enter the number of iterations. Example: 50</small>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control font-weight-light text-muted" id="kInput" aria-describedby="kInputHelp"
+                       placeholder="Value for K">
+                <small id="kInputHelp" class="form-text text-muted">Please enter a value for K. Example: 3</small>
+            </div>
+
+            <!-- Upload image input-->
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <!--                onchange="readURL(this);" -->
+                <input id="uploadInput" type="file" class="form-control border-0">
+                <label id="uploadLabel" for="uploadInput" class="font-weight-light text-muted">Choose file</label>
+
+                <div class="input-group-append">
+                    <label for="uploadInput" class="btn btn-light m-0 rounded-pill px-4"> <i
+                            class="fa fa-cloud-upload mr-2 text-muted"></i><small
+                            class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                </div>
+            </div>
+
+            <div class="container d-flex flex-row justify-content-center text-center">
+                <div id="ldsDualRing" class="ldsDualRing" style="display: none"></div>
+            </div>
+
+
+            <!-- Uploaded image area-->
+            <p id="descriptionP" class="font-italic text-white text-center">The image will be processed within <b>minutes</b>. When ready,
+                the
+                image will be displayed on the Image Processed box.</p>
+            <div class="image-area mt-4"><img id="imageResultDiv" src="#" alt=""
+                                              class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+            <div class="image-area mt-4"><img id="imageUploadedDiv" src="#" alt=""
+                                              class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
