@@ -13,3 +13,9 @@ def save_file(file, data_path):
     create_directory_if_not_exists(data_path)
     with open(data_path + file.filename, "wb") as buffer:
         buffer.write(file.file.read())
+
+
+def load_file(file_name, data_path):
+    create_directory_if_not_exists(data_path)
+    with open(data_path + file_name, "rb") as f:
+        file = f

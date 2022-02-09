@@ -2,7 +2,7 @@ from fastapi import FastAPI, File, UploadFile, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from helper import save_file
-from main import main, data_path
+from Algorithm import main, data_path
 
 app = FastAPI()
 
